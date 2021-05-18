@@ -6,10 +6,11 @@ target 'RxMemo' do
   use_frameworks!
 
   # Pods for RxMemo
-  pod 'RxSwift'
+  pod 'RxSwift', '~> 5.1.1'
   pod 'RxCocoa'
   pod 'Action'
   pod 'NSObject+Rx'
   pod 'RxDataSources'
   pod 'RxCoreData'
 end
+
