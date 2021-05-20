@@ -85,11 +85,35 @@
                     <view key="view" contentMode="scaleToFill" id="Cw5-n3-ibC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IN5-na-wP3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Gvc-NL-Mua"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IN5-na-wP3" firstAttribute="trailing" secondItem="Gvc-NL-Mua" secondAttribute="trailing" id="5Ul-zm-3Yf"/>
+                            <constraint firstAttribute="bottom" secondItem="IN5-na-wP3" secondAttribute="bottom" id="jfp-uT-Zra"/>
+                            <constraint firstItem="IN5-na-wP3" firstAttribute="leading" secondItem="Gvc-NL-Mua" secondAttribute="leading" id="vCP-Ww-H7H"/>
+                            <constraint firstItem="IN5-na-wP3" firstAttribute="top" secondItem="Cw5-n3-ibC" secondAttribute="top" id="xRL-TB-0Qc"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="새 메모" id="aQZ-4s-Cs8"/>
+                    <navigationItem key="navigationItem" title="새 메모" id="aQZ-4s-Cs8">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="pAq-qe-hK7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ait-e4-dUG"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="pAq-qe-hK7" id="tJ0-h8-QSg"/>
+                        <outlet property="contentTextView" destination="IN5-na-wP3" id="nSK-es-SvQ"/>
+                        <outlet property="saveButton" destination="Ait-e4-dUG" id="PTe-0i-nQh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9w-H5-XyX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,6 +174,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
