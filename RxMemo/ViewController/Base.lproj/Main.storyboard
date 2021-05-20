@@ -195,10 +195,10 @@
                     <navigationItem key="navigationItem" title="메모 보기" id="Cyb-eh-BAp"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="deleteButton" destination="F7E-zP-TrA" id="X8k-vL-3ht"/>
-                        <outlet property="editButton" destination="F7E-zP-TrA" id="nw3-5g-NVL"/>
+                        <outlet property="deleteButton" destination="ABu-P2-HA3" id="zdo-q4-6tD"/>
+                        <outlet property="editButton" destination="URc-G4-dX8" id="KIM-A0-0we"/>
                         <outlet property="listTableView" destination="K0T-6u-8rl" id="zub-1x-DVv"/>
-                        <outlet property="shareButton" destination="F7E-zP-TrA" id="3Kr-hC-qvj"/>
+                        <outlet property="shareButton" destination="mbD-ok-moj" id="Xfa-n5-0ep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjD-hV-Foe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

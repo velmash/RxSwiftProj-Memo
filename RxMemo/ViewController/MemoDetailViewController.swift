@@ -12,9 +12,9 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
      var viewModel: MemoDetailViewModel!
      
      @IBOutlet weak var listTableView: UITableView!
-     @IBOutlet weak var deleteButton: UIToolbar!
-     @IBOutlet weak var editButton: UIToolbar!
-     @IBOutlet weak var shareButton: UIToolbar!
+     @IBOutlet weak var deleteButton: UIBarButtonItem!
+     @IBOutlet weak var editButton: UIBarButtonItem!
+     @IBOutlet weak var shareButton: UIBarButtonItem!
      
      override func viewDidLoad() {
           super.viewDidLoad()
@@ -41,5 +41,7 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
                     }
                }
                .disposed(by: rx.disposeBag)
+          
+          editButton.rx.action = viewModel.makeEditAction()
      }
 }
