@@ -46,6 +46,8 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
           
           editButton.rx.action = viewModel.makeEditAction()
           
+          deleteButton.rx.action = viewModel.makeDeleteAction()
+          
           // action 방식으로 바꿔보기
           shareButton.rx.tap
                .throttle(.milliseconds(500), scheduler: MainScheduler.instance) // 더블탭방지
