@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3AA4B50E2655D6CE00AC954C /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4B50D2655D6CE00AC954C /* CommonViewModel.swift */; };
+		3AAE5439265739C0004D8CBE /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE5438265739C0004D8CBE /* CoreDataStorage.swift */; };
 		3AC6592126533A9D008B5AED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6592026533A9D008B5AED /* AppDelegate.swift */; };
 		3AC6592326533A9D008B5AED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6592226533A9D008B5AED /* SceneDelegate.swift */; };
 		3AC6592826533A9D008B5AED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC6592626533A9D008B5AED /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		3AA4B50D2655D6CE00AC954C /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		3AAE5438265739C0004D8CBE /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 		3AC6591D26533A9D008B5AED /* RxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC6592026533A9D008B5AED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AC6592226533A9D008B5AED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				3AC6592926533A9D008B5AED /* RxMemo.xcdatamodeld */,
+				3AAE5438265739C0004D8CBE /* CoreDataStorage.swift */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC6594326534142008B5AED /* MemoryStorage.swift in Sources */,
+				3AAE5439265739C0004D8CBE /* CoreDataStorage.swift in Sources */,
 				3AC6594F265348BC008B5AED /* MemoComposeViewModel.swift in Sources */,
 				3AC6595926535558008B5AED /* SceneCoordinator.swift in Sources */,
 				3AC65955265350E0008B5AED /* Scene.swift in Sources */,
